@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏体育 · 信息索引页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e1e1e;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      padding: 3rem 0 1.2rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #5a5a5a;
+      max-width: 80%;
+    }
+
+    /* ---------- sections ---------- */
+    section {
+      padding: 2.2rem 0;
+      border-bottom: 1px solid #ececec;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 520;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+      color: #222;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 480;
+      margin-top: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #2c2c2c;
+    }
+
+    p, li {
+      font-size: 0.98rem;
+      color: #3a3a3a;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.2rem;
+      margin-bottom: 0.45rem;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: #8a8a8a;
+      font-weight: 700;
+    }
+
+    .info-card {
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+      padding: 1.5rem 1.6rem;
+      margin: 1.4rem 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .info-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---------- FAQ 摘要 ---------- */
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      color: #1f1f1f;
+    }
+
+    .faq-a {
+      color: #555;
+      font-size: 0.94rem;
+    }
+
+    /* ---------- 链接 / 锚点 ---------- */
+    a {
+      color: #1f4f7a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #1f4f7a;
+    }
+
+    .inline-link {
+      font-weight: 450;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem 2rem;
+      padding-top: 1.5rem;
+      margin-top: 1rem;
+      border-top: 1px solid #e6e6e6;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a {
+      color: #4a4a4a;
+      border-bottom: 1px solid transparent;
+    }
+
+    .footer-links a:hover {
+      color: #1f4f7a;
+      border-bottom-color: #a0bcd6;
+    }
+
+    .caption {
+      font-size: 0.85rem;
+      color: #8a8a8a;
+      margin-top: 2rem;
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 480px) {
+      body {
+        padding: 1.2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .hero .sub {
+        max-width: 100%;
+      }
+
+      .info-card {
+        padding: 1.2rem;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>爱游戏体育 · 信息整理</h1>
+    <div class="sub">
+      围绕体育资讯、赛事资料与索引的轻量化页面，帮助使用者快速定位感兴趣的内容。
+    </div>
+  </div>
+
+  <!-- 优势区：资料的整理方式 -->
+  <section>
+    <h2>资料索引的特点</h2>
+    <p>基于对公开体育信息的多方梳理，以下三项是经常被关注的侧重点：</p>
+    <div class="info-card">
+      <h3>多维分类</h3>
+      <p>按运动项目、赛事阶段、地区等维度拆分，便于按需筛选。例如将足球、篮球、网球等大类独立归档，并标注周期与信息来源。</p>
+      <h3>时间线整理</h3>
+      <p>对赛季、锦标赛、转会期等关键节点建立简明时间索引，减少重复搜索成本。</p>
+      <h3>原始信源标注</h3>
+      <p>每条条目均注明数据出处或参考链接，方便使用者自行核对细节。部分条目附有简短摘要。</p>
+    </div>
+    <p style="margin-top: 0.6rem;">索引本身不生成独家数据，而是扮演“导航”角色。如需了解更多体育相关服务，可参考 <a href="https://zh-igame-sport.com" class="inline-link">爱游戏体育</a> 所整合的内容方向。</p>
+  </section>
+
+  <!-- 说明区：使用场景 -->
+  <section>
+    <h2>常见使用场景</h2>
+    <ul>
+      <li>快速查找近期重大赛事日程，避免遗漏关键比赛。</li>
+      <li>回顾历史赛季数据，对比不同年份的赛果与统计。</li>
+      <li>了解某项运动的基本规则、组织架构及主要联赛分布。</li>
+      <li>获取转会、教练变更或场地变动等动态资讯的汇总链接。</li>
+      <li>作为个人兴趣笔记的补充，与朋友讨论时提供客观参考。</li>
+    </ul>
+    <p style="margin-top: 0.8rem;">上述场景均围绕“收集-整理-查阅”的流程设计，不构成任何预测或建议。</p>
+  </section>
+
+  <!-- 提示区 / 额外说明 -->
+  <section>
+    <h2>关于信息准确性的说明</h2>
+    <p>本索引页所引述的内容均来自公开渠道，并经过交叉比对。由于体育赛程、名单与规则可能随时调整，建议使用者以官方发布的最新公告为准。</p>
+    <p style="margin-top: 0.4rem;">若发现内容有误或链接失效，可通过反馈渠道告知。本页不作为商业推广用途，仅为资料整理与导航索引。</p>
+  </section>
+
+  <!-- FAQ 摘要 -->
+  <section>
+    <h2>常见问题（摘要）</h2>
+    <div class="faq-item">
+      <div class="faq-q">Q：索引覆盖哪些运动项目？</div>
+      <div class="faq-a">A：目前以足球、篮球、网球、电竞（模拟体育类）为主，板球、橄榄球等视资料完整度逐步补充。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：资料更新频率如何？</div>
+      <div class="faq-a">A：主要赛事期间每周更新 1–2 次；休赛期或低密度时段不定期梳理。所有更新会标注日期。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：是否包含博彩或赔率信息？</div>
+      <div class="faq-a">A：不包含。本索引仅涉及体育规则、赛程、历史记录与背景知识，不涉及任何博彩内容。</div>
+    </div>
+  </section>
+
+  <!-- 底部链接 -->
+  <div class="footer-links">
+    <a href="https://zh-igame-sport.com">爱游戏体育</a>
+    <span style="color:#aaa;">·</span>
+    <span>索引维护记录</span>
+    <span>内容来源参考</span>
+    <span>关于本页</span>
+  </div>
+
+  <div class="caption">
+    页面内容仅供信息参考，不构成任何形式的保证或承诺。
+  </div>
+
+</div>
+</body>
+</html>
